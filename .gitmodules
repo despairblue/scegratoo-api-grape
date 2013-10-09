@@ -1,0 +1,3 @@
+[submodule "scegratoo"]
+	path = scegratoo
+	url = https://github.com/despairblue/scegratoo.git
