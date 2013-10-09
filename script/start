@@ -1,0 +1,13 @@
+#!/bin/bash -xe
+# Usage: `script/start` from git root
+
+ROOT=$(pwd)
+SCEGRATOO=$(pwd)/scegratoo
+
+if [[ -e .git ]]; then
+	cd $SCEGRATOO
+	brunch watch &
+
+	cd $ROOT
+	shotgun --port=8000 config.ru &
+fi

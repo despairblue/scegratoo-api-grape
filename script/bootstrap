@@ -1,0 +1,14 @@
+#!/bin/bash -xe
+# Usage: `script/bootstrap` from git root
+
+ROOT=$(pwd)
+SCEGRATOO=$(pwd)/scegratoo
+
+if [[ -e .git ]]; then
+	git submodule init
+	git submodule update
+
+	cd $SCEGRATOO
+	npm install
+	bower install
+fi

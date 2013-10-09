@@ -1,0 +1,5 @@
+#!/bin/bash -xe
+# Usage: `script/restart` from git root
+
+script/stop
+script/start

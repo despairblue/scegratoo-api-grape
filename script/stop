@@ -1,0 +1,11 @@
+#!/bin/bash
+# Usage: `script/stop` from git root
+
+read -p "This will kill all node instances! You're sure? Really? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	killall node
+	killall shotgun
+fi
+
