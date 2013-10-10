@@ -3,11 +3,18 @@
 ## Getting started
 
 ### Dependencies
-- [git](http://git-scm.com/)
-- [node](http://nodejs.org/)
-- [brunch](http://brunch.io/)
-- [bower](http://bower.io/)
-- [shotgun](https://github.com/rtomayko/shotgun)
+
+- Client
+  - [node](http://nodejs.org/)
+  - [brunch](http://brunch.io/)
+  - [bower](http://bower.io/)
+- Server
+  - [grape](https://github.com/intridea/grape)
+  - [grape-swagger](https://github.com/tim-vandecasteele/grape-swagger)
+  - [shotgun](https://github.com/rtomayko/shotgun)
+- Optional
+  - [scaffolt](https://github.com/paulmillr/scaffolt) - for scaffolding
+  - [mocha-phantomjs](http://metaskills.net/mocha-phantomjs/) - for testing
 
 ### Setup
 1. `git clone https://github.com/despairblue/scegratoo-api-grape.git`
